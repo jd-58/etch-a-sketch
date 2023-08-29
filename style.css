@@ -1,0 +1,19 @@
+#gridContainer {
+    display: flex;
+    background-color:aqua;
+    border: blue;
+    width: 600px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+.grid {
+    /*flex: 1 0 21%; */
+    width: 24%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 1px;
+    background-color: blue;
+
+
+}
