@@ -11,14 +11,14 @@ const gridContainer = document.getElementById("gridContainer");
 
   function createGrid(gridAmount) {
     let id = 1;
-for (let i=1; i<= gridAmount; i++) {
-    let gridDiv = document.createElement("div");
-    gridDiv.setAttribute("id", "gridNum" + id);
-    gridDiv.setAttribute("class", "grid");
-    gridDiv.style.color = "black";
-    gridDiv.addEventListener('mouseover', changeGridColor)
-    gridContainer.appendChild(gridDiv);
-    id++;
+    for (let i=1; i<= gridAmount; i++) {
+        let gridDiv = document.createElement("div");
+        gridDiv.setAttribute("id", "gridNum" + id);
+        gridDiv.setAttribute("class", "grid");
+        gridDiv.style.color = "black";
+        gridDiv.addEventListener('mouseover', changeGridColor)
+        gridContainer.appendChild(gridDiv);
+        id++;
 
 }
 }
@@ -27,8 +27,13 @@ for (let i=1; i<= gridAmount; i++) {
 
 createGrid(16);
 function changeGridColor(e) {
-Object.assign(e.target.style, {
-    backgroundColor : "red" });
+    let r = Math.random() * 256
+    let g = Math.random() * 256
+    let b = Math.random() * 256
+    var randomColor = "rgba(" + r + "," + g + "," + b + "1" + ")"; 
+    String(randomColor)
+    Object.assign(e.target.style, {
+        backgroundColor : randomColor });
 }
 /*let gridArray = document.getElementsByClassName("grid");
 for (let i=1; i<= gridArray.length; i++) {
