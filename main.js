@@ -1,4 +1,5 @@
 const gridContainer = document.getElementById("gridContainer");
+const clearButton = document.getElementById("resize")
 
 
 //let gridAmount = 256;  starting value of 16x16
@@ -9,7 +10,7 @@ const gridContainer = document.getElementById("gridContainer");
 // edit later, as this will need to be updated if the user
 //  wants to be able to select grid size.
 
-  function createGrid(gridAmount) {
+function createGrid(gridAmount) {
     let id = 1;
     for (let i=1; i<= gridAmount; i++) {
         let gridDiv = document.createElement("div");
@@ -23,7 +24,9 @@ const gridContainer = document.getElementById("gridContainer");
 }
 }
 
-
+function resizeGrid() {
+    let newGridSize = prompt("What size would you like the grid to be? (1-100)")
+}
 
 createGrid(16);
 function changeGridColor(e) {
@@ -35,14 +38,4 @@ function changeGridColor(e) {
     Object.assign(e.target.style, {
         backgroundColor : randomColor });
 }
-/*let gridArray = document.getElementsByClassName("grid");
-for (let i=1; i<= gridArray.length; i++) {
-    currentGridNumber = "gridNum" + i;
-    String(currentGridNumber);
-    let gridPixel = document.getElementById(currentGridNumber);
-    console.log(gridPixel)
-    // gridPixel.addEventListener("mouseenter", changeColor);
-}
-// gridNum1.addEventListener("mouseenter", gridNum1.style.backgroundColor = "red")
 
-*/
