@@ -1,5 +1,5 @@
 #gridContainer {
-    display: grid;
+    display: flex;
     background-color:aqua;
     border: blue;
     width: 600px;
@@ -9,7 +9,7 @@
 
 .grid {
     /*flex: 1 0 21%; */
-    width: 25%;
+    
     border-style: none;
     border-color: white;
     border-radius: 1px;

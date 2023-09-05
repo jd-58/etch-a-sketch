@@ -1,6 +1,6 @@
 const gridContainer = document.getElementById("gridContainer");
 const clearButton = document.getElementById("resize")
-
+let gridPercentageWidth = 0.25
 
 //let gridAmount = 256;  starting value of 16x16
 /*for (var i = 1; i<= gridAmount; i++) {
@@ -12,23 +12,32 @@ const clearButton = document.getElementById("resize")
 
 function createGrid(gridAmount) {
     let id = 1;
+    let newGridWidth = Math.sqrt(gridAmount)
+    gridPercentageWidth = (1/ newGridWidth) * 100
+    String(gridPercentageWidth)
+    gridPercentageWidth = gridPercentageWidth + "%"
+    String(gridPercentageWidth)
+    console.log(gridPercentageWidth)
     for (let i=1; i<= gridAmount; i++) {
         let gridDiv = document.createElement("div");
         gridDiv.setAttribute("id", "gridNum" + id);
         gridDiv.setAttribute("class", "grid");
         gridDiv.style.color = "black";
+        gridDiv.style.width = gridPercentageWidth
         gridDiv.addEventListener('mouseover', changeGridColor)
         gridContainer.appendChild(gridDiv);
         id++;
-
 }
 }
 
 function resizeGrid() {
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
+    newGridSize = newGridSize * newGridSize
+    createGrid(newGridSize)
 }
 
-createGrid(16);
+
+
 function changeGridColor(e) {
     let r = Math.random() * 256
     let g = Math.random() * 256
