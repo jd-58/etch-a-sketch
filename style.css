@@ -1,17 +1,28 @@
+#webpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #gridContainer {
     display: flex;
-    background-color:aqua;
-    border: blue;
-    width: 600px;
-    height: 600px;
+    background-color:rgb(88, 88, 88);
+    border: black;
+    border-style: solid;
+    border-radius: 2px;
+    width: 900px;
+    height: 900px;
     flex-wrap: wrap;
 }
 
 .grid {
-    /*flex: 1 0 21%; */
-    
     border-style: none;
     border-color: white;
     border-radius: 1px;
-    background-color: blue;
+    background-color: rgb(88, 88, 88)
+}
+
+#resize {
+    height: 20px;
+    width: 100px;
 }

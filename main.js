@@ -17,7 +17,6 @@ function createGrid(gridAmount) {
     String(gridPercentageWidth)
     gridPercentageWidth = gridPercentageWidth + "%"
     String(gridPercentageWidth)
-    console.log(gridPercentageWidth)
     for (let i=1; i<= gridAmount; i++) {
         let gridDiv = document.createElement("div");
         gridDiv.setAttribute("id", "gridNum" + id);
@@ -31,11 +30,23 @@ function createGrid(gridAmount) {
 }
 
 function resizeGrid() {
+    clearGrid()
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
     newGridSize = newGridSize * newGridSize
     createGrid(newGridSize)
 }
 
+function clearGrid() {
+    let oldGrid = document.getElementsByClassName("grid")
+    let oldGridSize = oldGrid.length
+    for (let i=1; i < (oldGridSize + 1); i++) {
+        let currentGridNum = String(i)
+        currentGridNum = "gridNum" + i
+        String(currentGridNum)
+        let currentGrid = document.getElementById(currentGridNum)
+        currentGrid.remove()
+    }
+}
 
 
 function changeGridColor(e) {
