@@ -26,6 +26,12 @@ function createGrid(gridAmount) {
 function resizeGrid() {
     clearGrid()
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
+    if (newGridSize < 1) {
+        newGridSize = 1
+    }
+    if (newGridSize > 100) {
+        newGridSize = 100
+    }
     newGridSize = newGridSize * newGridSize
     createGrid(newGridSize)
 }
