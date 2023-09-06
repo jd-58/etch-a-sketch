@@ -1,8 +1,16 @@
-#webpage {
+#contentContainer {
     display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    padding: 20px;
     align-items: center;
-    justify-content: center;
 }
+
+#title {
+
+    flex-wrap: wrap;
+}
+
 
 #gridContainer {
     display: flex;
@@ -13,16 +21,22 @@
     width: 900px;
     height: 900px;
     flex-wrap: wrap;
+    
 }
 
 .grid {
     border-style: none;
-    border-color: white;
-    border-radius: 1px;
     background-color: rgb(88, 88, 88)
 }
 
 #resize {
     height: 20px;
     width: 100px;
+    margin: 10px;
+}
+
+#clear {
+    height: 20px;
+    width: 100px;
+    margin: 10px;
 }

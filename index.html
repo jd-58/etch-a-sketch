@@ -8,12 +8,15 @@
     <script src="main.js" defer></script>  
 </head>
 <body>
-<div id="webpage">
-    <h1>Etch-a-sketch!</h1>
-    <button onclick="resizeGrid()" id="resize">Grid Size</button>
-    <div id="gridContainer">
-
+<div id="contentContainer">
+    <h1 id="title">Etch-a-sketch!</h1>
+    <div id="buttonContainer">
+        <button onclick="resizeGrid()" id="resize">Grid Size</button>
+        <button onclick="recolorGrid()" id="clear">Clear Grid</button>
     </div>
+        <div id="gridContainer">
+
+        </div>
 </div>
     
 </body>

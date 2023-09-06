@@ -48,6 +48,18 @@ function clearGrid() {
     }
 }
 
+function recolorGrid() {
+    let oldGrid = document.getElementsByClassName("grid")
+    let oldGridSize = oldGrid.length
+    for (let i=1; i < (oldGridSize + 1); i++) {
+        let currentGridNum = String(i)
+        currentGridNum = "gridNum" + i
+        String(currentGridNum)
+        let currentGrid = document.getElementById(currentGridNum)
+        currentGrid.style.backgroundColor = "rgb(88, 88, 88)"
+    } 
+}
+
 
 function changeGridColor(e) {
     let r = Math.random() * 256
