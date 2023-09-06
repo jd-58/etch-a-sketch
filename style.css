@@ -53,7 +53,7 @@ input {
 }
 
 #resize, #clear, #randomColor {
-    height: 25px;
+    height: 36px;
     width: 125px;
     margin: 10px;
 }
