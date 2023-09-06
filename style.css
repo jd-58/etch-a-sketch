@@ -1,3 +1,11 @@
+
+
+body {
+    background-color: #00ebfc;
+    font-family: 'Courier New', monospace;
+}
+
+
 #contentContainer {
     display: flex;
     flex-direction: column;
@@ -8,6 +16,7 @@
 
 #title {
     flex-wrap: wrap;
+    text-shadow: 2px 2px white;
 }
 
 
@@ -16,12 +25,72 @@
     background-color:rgb(88, 88, 88);
     border: black;
     border-style: solid;
-    border-radius: 2px;
+    border-radius: 4px;
+    border-width: 8px;
     width: 900px;
     height: 900px;
     flex-wrap: wrap;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.63);
     
 }
+
+button {
+    font-family: 'Courier New', monospace;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #fc00eb;
+    color: black;
+    border-radius: 8px;
+    padding: 5px 10px 5px;
+    transition: 0.4s;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.63);
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+
+
+button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: #a10e98;
+    color: #fff;
+  }
+    
+  button:hover {
+    -webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
+    margin-top: -10px;
+  }
+
+/* button {
+    font-family: 'Courier New', monospace;
+    color: black;
+    --c:  #fc00eb; 
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+ */
 
 .grid {
     border-style: none;
@@ -32,6 +101,7 @@
 #buttonContainer {
     display: flex;
     align-items: flex-end;
+    font-family: 'Courier New', monospace;
 }
 
 #pickColorContainer {
@@ -45,12 +115,36 @@
 }
 
 input {
+    font-weight: bolder;
     height: 25px;
     width: 125px;
     margin: 5px;
     margin-left: 25px;
-    margin-right: 25px
+    margin-right: 25px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    background: none;
+    border-color: #fc00eb;
+    color: black;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    transition: 0.4s;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.63);
+    text-shadow: 2px 2px white;
 }
+
+
+input:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: #a10e98;;
+    color: #fff;
+}
+
+input:hover {
+    -webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
+  }
 
 #resize, #clear, #randomColor {
     height: 36px;
