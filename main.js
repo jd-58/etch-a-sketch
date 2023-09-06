@@ -124,3 +124,4 @@ function useSelectedColor() {
     }
 }
 
+createGrid(256);

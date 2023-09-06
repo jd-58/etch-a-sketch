@@ -102,6 +102,8 @@ button:active {
     display: flex;
     align-items: flex-end;
     font-family: 'Courier New', monospace;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+    font-weight: bolder;
 }
 
 #pickColorContainer {
@@ -116,12 +118,12 @@ button:active {
 
 input {
     font-weight: bolder;
-    height: 25px;
+    height: 36px;
     width: 125px;
     margin: 5px;
     margin-left: 25px;
     margin-right: 25px;
-    font-family: 'Courier New', monospace;
+    text-shadow: 2px 2px white;
     cursor: pointer;
     background: none;
     border-color: #fc00eb;
@@ -131,7 +133,10 @@ input {
     border-width: 2px;
     transition: 0.4s;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.63);
-    text-shadow: 2px 2px white;
+}
+
+#colorPicker {
+    font-size: 324px;
 }
 
 
@@ -150,4 +155,5 @@ input:hover {
     height: 36px;
     width: 125px;
     margin: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
 }
