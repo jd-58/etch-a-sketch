@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content:  center;
-    padding: 20px;
+    margin: 20px;
     align-items: center;
 }
 
@@ -29,14 +29,31 @@
     background-color: rgb(88, 88, 88)
 }
 
-#resize {
-    height: 20px;
-    width: 100px;
-    margin: 10px;
+#buttonContainer {
+    display: flex;
+    align-items: flex-end;
 }
 
-#clear {
-    height: 20px;
-    width: 100px;
+#pickColorContainer {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+}
+
+input {
+    height: 25px;
+    width: 125px;
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px
+}
+
+#resize, #clear, #randomColor {
+    height: 25px;
+    width: 125px;
     margin: 10px;
 }

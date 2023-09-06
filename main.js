@@ -2,13 +2,7 @@ const gridContainer = document.getElementById("gridContainer");
 const clearButton = document.getElementById("resize")
 let gridPercentageWidth = 0.25
 
-//let gridAmount = 256;  starting value of 16x16
-/*for (var i = 1; i<= gridAmount; i++) {
-    gridArray.push(i)
-} */
-// creating an array with the numbers 1-gridAmount. Need to
-// edit later, as this will need to be updated if the user
-//  wants to be able to select grid size.
+
 
 function createGrid(gridAmount) {
     let id = 1;
@@ -23,7 +17,7 @@ function createGrid(gridAmount) {
         gridDiv.setAttribute("class", "grid");
         gridDiv.style.color = "black";
         gridDiv.style.width = gridPercentageWidth
-        gridDiv.addEventListener('mouseover', changeGridColor)
+        gridDiv.addEventListener('mouseover', findCurrentColor)
         gridContainer.appendChild(gridDiv);
         id++;
 }
@@ -59,9 +53,47 @@ function recolorGrid() {
         currentGrid.style.backgroundColor = "rgb(88, 88, 88)"
     } 
 }
+let currentColor = ''
+let colorPicker = document.getElementById("colorPicker")
+colorPicker.addEventListener('input', function() {  
+    currentColor = colorPicker.value;
+    let grid = document.getElementsByClassName("grid")
+    let gridSize = grid.length
+    for (let i=0; i < gridSize; i++) {
+        let currentGridNum = i + 1
+        String(currentGridNum)
+        currentGridNum = "gridNum" + currentGridNum
+        let currentGrid = document.getElementById(currentGridNum)
+        currentGrid.removeEventListener('mouseover', randomGridColor)
+        currentGrid.addEventListener('mouseover', findCurrentColor)
+   }
+}
+)
+
+function useRandomColor() {
+    let grid = document.getElementsByClassName("grid")
+    let gridSize = grid.length
+    for (let i=0; i < gridSize; i++) {
+        let currentGridNum = i + 1
+        console.log("test")
+        String(currentGridNum)
+        currentGridNum = "gridNum" + currentGridNum
+        let currentGrid = document.getElementById(currentGridNum)
+        currentGrid.removeEventListener('mouseover', findCurrentColor)
+        currentGrid.addEventListener('mouseover', randomGridColor)
+   }
+}
+
+function findCurrentColor(e) {
+    currentColor = colorPicker.value
+    String(currentColor)
+    Object.assign(e.target.style, {
+        backgroundColor : currentColor});
+
+}
 
 
-function changeGridColor(e) {
+function randomGridColor(e) {
     let r = Math.random() * 256
     let g = Math.random() * 256
     let b = Math.random() * 256
@@ -69,5 +101,20 @@ function changeGridColor(e) {
     String(randomColor)
     Object.assign(e.target.style, {
         backgroundColor : randomColor });
+}
+
+function useSelectedColor() {
+    let grid = document.getElementsByClassName("grid")
+    let gridSize = grid.length
+    console.log(gridSize)
+    for (let i=0; i < gridSize; i++) {
+        let currentGridNum = String(i + 1)
+        currentGridNum = "gridNum" + i
+        String(currentGridNum)
+        console.log(currentGridNum)
+        let currentGrid = document.getElementById(currentGridNum)
+        currentGrid.removeEventListener('mouseover', randomGridColor)
+        currentGrid.addEventListener('mouseover', )
+    }
 }
 
