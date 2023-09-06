@@ -24,16 +24,34 @@ function createGrid(gridAmount) {
 }
 
 function resizeGrid() {
-    clearGrid()
+    let currentGrid = document.getElementsByClassName("grid")
+    let currentGridSize = currentGrid.length
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
-    if (newGridSize < 1) {
+    if(newGridSize == null) {
+        return
+    }
+    else if (newGridSize < 1) {
+        console.log(newGridSize)
         newGridSize = 1
+        clearGrid()
+        createGrid(newGridSize)
     }
-    if (newGridSize > 100) {
+    else if (newGridSize > 100) {
         newGridSize = 100
+        clearGrid()
+        createGrid(newGridSize)
     }
-    newGridSize = newGridSize * newGridSize
-    createGrid(newGridSize)
+    else if (newGridSize >= 1 && newGridSize <= 100) {
+        newGridSize = newGridSize * newGridSize
+        clearGrid()
+        createGrid(newGridSize)
+    }
+    else {
+
+        return
+    }
+
+
 }
 
 function clearGrid() {
