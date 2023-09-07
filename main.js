@@ -7,6 +7,7 @@ let gridPercentageWidth = 0.25
 function createGrid(gridAmount) {
     let id = 1;
     let newGridWidth = Math.sqrt(gridAmount)
+    console.log(newGridWidth)
     gridPercentageWidth = (1/ newGridWidth) * 100
     String(gridPercentageWidth)
     gridPercentageWidth = gridPercentageWidth + "%"
@@ -37,7 +38,7 @@ function resizeGrid() {
         createGrid(newGridSize)
     }
     else if (newGridSize > 100) {
-        newGridSize = 100
+        newGridSize = 10000
         clearGrid()
         createGrid(newGridSize)
     }
