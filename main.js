@@ -25,7 +25,7 @@ function createGrid(gridAmount) {
 }
 
 function resizeGrid() {
-    let currentGrid = document.getElementsByClassName("grid")
+    // let currentGrid = document.getElementsByClassName("grid")
     // let currentGridSize = currentGrid.length
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
     if (newGridSize < 1) {
