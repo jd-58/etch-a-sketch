@@ -22,9 +22,9 @@ Navigate to the project directory:
 
 Usage
 
-    Open the index.html file, and run it.
-    The drawing grid will appear on the screen. Use your mouse to hover over the grid cells to start drawing.
-    Use the controls to:
+Open the index.html file, and run it.
+The drawing grid will appear on the screen. Use your mouse to hover over the grid cells to start drawing.
+Use the controls to:
         Random Color: Click the "Random Color" button to enable random colors for each grid cell.
         RGB Color Picker: Use the RGB color picker to select a specific color for drawing.
         Clear Grid: Click the "Clear Grid" button to reset the grid and start fresh.
