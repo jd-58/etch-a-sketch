@@ -26,12 +26,9 @@ function createGrid(gridAmount) {
 
 function resizeGrid() {
     let currentGrid = document.getElementsByClassName("grid")
-    let currentGridSize = currentGrid.length
+    // let currentGridSize = currentGrid.length
     let newGridSize = prompt("What size would you like the grid to be? (1-100)")
-    if(newGridSize == null) {
-        return
-    }
-    else if (newGridSize < 1) {
+    if (newGridSize < 1) {
         console.log(newGridSize)
         newGridSize = 1
         clearGrid()
@@ -47,12 +44,6 @@ function resizeGrid() {
         clearGrid()
         createGrid(newGridSize)
     }
-    else {
-
-        return
-    }
-
-
 }
 
 function clearGrid() {
