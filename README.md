@@ -13,21 +13,21 @@ Welcome to my Etch-A-Sketch project! This is a web-based drawing tool inspired b
 
 ### This project is hosted on GitHub Pages. To run this project, [click here.](https://jd-58.github.io/etch-a-sketch/)
 
-
+---------------------------------------------------------------------------------------------------------------------
 To run this project on your local machine, follow the following steps:
 
-#### Clone the repository to your local machine
+<br>
 
-    git clone https://github.com/your-username/etch-a-sketch.git
+1. #### Clone the repository to your local machine
+
+    For instructions on cloning a repository, [click here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+<br>
 
 
-#### Navigate to the project directory
-
-    cd etch-a-sketch
-
-#### Open the index.html file, and run it.
-The drawing grid will appear on the screen. Use your mouse to hover over the grid cells to start drawing.
-Use the controls to:
-        Random Color: Click the "Random Color" button to enable random colors for each grid cell.
-        RGB Color Picker: Use the RGB color picker to select a specific color for drawing.
-        Clear Grid: Click the "Clear Grid" button to reset the grid and start fresh.
+2. #### Open the index.html file, and run it.
+    The drawing grid will appear on the screen. Use your mouse to hover over the grid cells to start drawing.
+    Use the controls to:
+   - Random Color: Click the "Random Color" button to enable random colors for each grid cell.
+   - RGB Color Picker: Use the RGB color picker to select a specific color for drawing.
+   - Clear Grid: Click the "Clear Grid" button to reset the grid and start fresh.
