@@ -2,6 +2,8 @@
 
 Welcome to my Etch-A-Sketch project! This is a web-based drawing tool inspired by the classic etch-a-sketch toy. Built using HTML, CSS, and JavaScript, it provides a fun and interactive way to create digital art.
 
+![Screenshot of Etch a sketch project.](/screenshots/etch-a-sketch.png)
+
 ## Features
 - Random Color Selector: Automatically choose a random color for each grid cell as you draw.
 - RGB Color Selector: Pick any color you like using the RGB color picker.
