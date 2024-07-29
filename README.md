@@ -12,7 +12,7 @@ Welcome to my Etch-A-Sketch project! This is a web-based drawing tool inspired b
 
 ## Getting Started
 
-### This project is hosted on GitHub Pages. To see this project in action, [click here.](https://jd-58.github.io/etch-a-sketch/)
+### This project is hosted on GitHub Pages. To see this project in action, [click here.](https://www.jacob-deaton.com/etch-a-sketch.html)
 
 ---------------------------------------------------------------------------------------------------------------------
 ### To run this project on your local machine, follow the following steps:
